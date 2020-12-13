@@ -1,0 +1,4 @@
+{
+    "serverPath": "C:\\Users\\Kevin Long\\Documents\\GitHub\\bds-updater\\versions\\test",
+    "doNotOverwrite": ["permissions.json", "server.properties", "whitelist.json"]
+}
