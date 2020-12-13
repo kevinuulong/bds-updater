@@ -11,6 +11,7 @@ const pageUrl = "https://www.minecraft.net/en-us/download/server/bedrock";
 
 var zip;
 var output;
+
 const platform = () => {
     if (config.platform.toLowerCase() == "windows") return 0;
     return 1;
@@ -19,7 +20,7 @@ const platform = () => {
 got(pageUrl).then(res => {
     console.log('🔗 Extracting latest download link')
     const $ = cheerio.load(res.body);
-    const downloadUrl = $('.downloadlink')[0].attribs.href;
+    const downloadUrl = $('.downloadlink')[platform].attribs.href;
     zip = `versions/${path.posix.basename(downloadUrl)}`;
     var file = fs.WriteStream(zip);
     output = path.resolve('versions/output/');
