@@ -1,4 +1,5 @@
 {
     "serverPath": "PATH_TO_SERVER",
-    "doNotOverwrite": ["permissions.json", "server.properties", "whitelist.json"]
+    "doNotOverwrite": ["permissions.json", "server.properties", "whitelist.json"],
+    "platform": "windows"
 }
