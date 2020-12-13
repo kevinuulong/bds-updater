@@ -12,10 +12,7 @@ const pageUrl = "https://www.minecraft.net/en-us/download/server/bedrock";
 var zip;
 var output;
 
-const platform = () => {
-    if (config.platform.toLowerCase() == "windows") return 0;
-    return 1;
-}
+const platform = config.platform.toLowerCase() == "windows" ? 0 : 1;
 
 got(pageUrl).then(res => {
     console.log('🔗 Extracting latest download link')
