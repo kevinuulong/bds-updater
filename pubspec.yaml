@@ -1,0 +1,14 @@
+name: bds_updater
+version: 2.0.0
+description: >-
+  A simple utility to update BDS to the latest version.
+homepage: https://github.com/kevinuulong/bds-updater
+documentation: https://github.com/kevinuulong/bds-updater#readme
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+dependencies: 
+  archive: ^3.1.2
+  args: ^2.1.1
+  html: ^0.15.0
+  http: ^0.13.3
+dev_dependencies:
