@@ -28,10 +28,10 @@ void main(List<String> args) async {
   serverPath = results['path'];
   platform = results['platform'];
 
-  final zipPath = await downloadLatest(platform);
-
   print("📦 Backing up");
   makeBackup(doNotOverwrite, serverPath);
+
+  final zipPath = await downloadLatest(platform);
 
   print("👽 Extracting");
   extract(zipPath, serverPath);
