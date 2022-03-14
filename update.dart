@@ -14,7 +14,7 @@ var serverPath,
     doNotOverwrite = [
       "permissions.json",
       "server.properties",
-      "whitelist.json"
+      "allowlist.json"
     ],
     platform;
 void main(List<String> args) async {
