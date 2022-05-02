@@ -3,8 +3,8 @@
 ## Usage
 Run the following commands:
 ```ps1
-    dart pub get
-    dart run update.dart --platform="windows" --path="PATH_TO_SERVER"
+dart pub get
+dart run update.dart --platform="windows" --path="PATH_TO_SERVER"
 ```
 
 ## Note about v2.0.1
